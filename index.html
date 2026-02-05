@@ -1,160 +1,300 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/img/vw5Ec6VN_400x400.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Karma:wght@300;400;500;600;700&family=Pixelify+Sans:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Karma:wght@300;400;500;600;700&family=Pixelify+Sans:wght@400..700&family=Ubuntu&display=swap"
           rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/vhs.css">
+
     <title>We Are Rise Studios</title>
+
+    <style>
+        /* ===== CONTACT / CREDITS OVERLAY ===== */
+        #contact-credits {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            z-index: 2000;
+            text-align: right;
+            max-width: 330px;
+        }
+
+        #credits-content {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        #credits-content1 {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        /* ===== MOBILDE ANA PENCERE İÇİNE AL ===== */
+        @media (max-width: 1068px) {
+            #contact-credits {
+                position: static;
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
 </head>
 
-<body style="background-color: #005F5F">
+<body style="background-color:#005F5F">
 
-<div class="position-fixed top-0 start-0 h-100 d-flex flex-column align-items-center p-2 ms-3 mt-3"
-     style="width: 80px; background-color: transparent; z-index: 1030;" id="socials">
+<!-- ===== CONTACT + CREDITS ===== -->
+<div id="contact-credits">
 
-    <div class="text-center mb-4 retrof">
-        <a href="https://store.steampowered.com/app/3817240/Heaven_Does_Not_Respond/" target="_blank" class="text-decoration-none text-white">
-            <img src="img/steam.png" alt="Instagram" class="img-fluid mb-1" width="56">
-            <span>Steam</span>
-        </a>
-    </div>
-    <div class="text-center mb-4 retrof">
-        <a href="https://discord.gg/epZfqy5htB" target="_blank" class="text-decoration-none text-white">
-            <img src="img/discord.png" alt="Instagram" class="img-fluid mb-1" width="56">
-            <span>Discord</span>
-        </a>
-    </div>
-    <div class="text-center mb-4 retrof">
-        <a href="https://www.instagram.com/heavendoesnotrespond/" target="_blank" class="text-decoration-none text-white">
-            <img src="img/instagram.png" alt="Instagram" class="img-fluid mb-1" width="56">
-            <span>Instagram</span>
-        </a>
-    </div>
-    <div class="text-center mb-4 retrof">
-        <a href="https://www.tiktok.com/@heavendoesnotresp" target="_blank" class="text-decoration-none text-white">
-            <img src="img/tiktok.png" alt="Instagram" class="img-fluid mb-1" width="56">
-            <span>Tiktok</span>
-        </a>
-    </div>
-    <div class="text-center mb-4 retrof">
-        <a href="https://www.youtube.com/@heavendoesnotrespond" target="_blank" class="text-decoration-none text-white">
-            <img src="img/youtube.png" alt="Instagram" class="img-fluid mb-1" width="56">
-            <span>YouTube</span>
-        </a>
+    <div id="contact-toggle"
+         class="inner retrof p-2 ps-3 pe-3 mb-1"
+         style="font-size:18px; background-color:#dddddd; cursor:pointer;">
+        Contact Us
     </div>
 
+    <div id="contact-mail"
+         class="inner retrof p-2 ps-3 pe-3 mb-2"
+         style="display:none; font-size:16px; background-color:#ffffff;">
+        risestudiosss@gmail.com
+    </div>
 
+    <div id="credits-toggle"
+         class="inner retrof p-2 ps-3 pe-3"
+         style="font-size:18px; background-color:#dddddd; cursor:pointer;">
+        Credits
+    </div>
+
+    <div id="credits-content"
+         class="inner retrof p-3 mt-1"
+         style="display:none; font-size:14px; background-color:#ffffff; text-align:right; line-height:1.45;">
+
+        <strong>Audio & Music</strong><br><br>
+
+        Almost all music and sfx files made by Halil Taylan<br>
+        https://soundcloud.com/haliltaylan<br><br>
+
+        Radio Music Loop 012 by nlux<br>
+        https://freesound.org/s/621675/<br>
+        License: Attribution 4.0<br><br>
+
+        Skreechy hard drive by neopolitansixth<br>
+        https://freesound.org/s/563344/<br>
+        License: Creative Commons 0<br><br>
+
+        TensionMusicLoop by Akkaittou<br>
+        https://freesound.org/s/828570/<br>
+        License: Attribution 4.0<br><br>
+
+        Scary Cinematic sound.wav by liezen3<br>
+        https://freesound.org/s/479920/<br>
+        License: Attribution 4.0<br><br>
+
+        erre.aiff by tim.kahn<br>
+        https://freesound.org/s/83287/<br>
+        License: Attribution 4.0<br><br>
+
+        bubbles-01.aif by kijjaz<br>
+        https://freesound.org/s/16736/<br>
+        License: Attribution 4.0<br><br>
+
+        digital_glitch_noise.wav by rlkhafi<br>
+        https://freesound.org/s/609800/<br>
+        License: Attribution 3.0<br><br>
+
+        "Sack_v2" by TheDrone<br><br>
+
+        <strong>Video</strong><br><br>
+
+        Video by Pixabay<br>
+        https://www.pexels.com/video/close-up-view-of-sunflowers-855272/<br><br>
+
+        <strong>Voice Acting</strong><br><br>
+
+        Voice acting by Rotem Fenichel<br>
+        https://www.imdb.com/name/nm9665232/<br><br>
+
+        <strong>Images</strong><br><br>
+
+        Cern Particle Accelerator by x70tjw<br>
+        https://flic.kr/p/qwDFna<br>
+        License: CC BY-SA 2.0
+    </div>
 </div>
 
+<!-- ===== SOL SOSYALLER ===== -->
+<div id="socials"
+     class="position-fixed top-0 start-0 h-100 d-flex flex-column align-items-center p-2 ms-3 mt-3"
+     style="width:80px; z-index:1030; text-align:center;">
+
+    <a href="https://store.steampowered.com/app/3817240/Heaven_Does_Not_Respond/" target="_blank"
+       class="text-white text-decoration-none mb-4 retrof">
+        <img src="img/steam.png" width="56"><br>Steam
+    </a>
+
+    <a href="https://discord.gg/epZfqy5htB" target="_blank"
+       class="text-white text-decoration-none mb-4 retrof">
+        <img src="img/discord.png" width="56"><br>Discord
+    </a>
+
+    <a href="https://x.com/heavendoesnot" target="_blank"
+       class="text-white text-decoration-none mb-4 retrof">
+        <img src="img/X.png" width="56"><br>X
+    </a>
+
+    <a href="https://www.instagram.com/heavendoesnotrespond/" target="_blank"
+       class="text-white text-decoration-none mb-4 retrof">
+        <img src="img/instagram.png" width="56"><br>Instagram
+    </a>
+
+    <a href="https://www.tiktok.com/@heavendoesnotresp" target="_blank"
+       class="text-white text-decoration-none mb-4 retrof">
+        <img src="img/tiktok.png" width="56"><br>Tiktok
+    </a>
+
+    <a href="https://www.youtube.com/@heavendoesnotrespond" target="_blank"
+       class="text-white text-decoration-none retrof">
+        <img src="img/youtube.png" width="56"><br>YouTube
+    </a>
+</div>
+
+<!-- ===== ANA PENCERE ===== -->
 <div id="drag-div" class="outer">
     <div id="drag-nav" class="program-nav text-white retrof">
         HeavenDoesNotRespond.exe
     </div>
-    <div class="program-body p-2">
-        <div class="program-inner p-5 pt-2">
-            <h1 class="text-center jersey-10-regular text-dark">
-                Our game we are working on</h1>
-            <h1 class="text-center jersey-10-regular text-primary mt-2" style="font-size: 3rem">
-                Heaven Does Not
-                Respond</h1>
-            <div class="text-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J80cphV8z1M?si=w9emAjPvW6CKiPdJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
-            </div>
 
-            <h2 class="text-center jersey-10-regular linear mt-2">
+    <div class="program-body p-2">
+        <div class="program-inner p-5 pt-2 text-center">
+
+
+
+            <h1 class="jersey-10-regular text-dark">Our game is out</h1>
+
+            <h1 class="jersey-10-regular text-primary mt-2" style="font-size:3rem">
+                Heaven Does Not Respond
+            </h1>
+
+            <iframe src="https://www.youtube.com/embed/ettv__uM1dQ"
+                    style="width:500px; height:300px;" allowfullscreen></iframe>
+
+            <h2 class="jersey-10-regular mt-3">
                 Our most delicious meal, sprinkled with
                 <span class="text-danger">psychological horror</span>,
-                <span class="text-primary">cosmic horror</span>,
                 <span class="text-warning">analog horror</span>,
                 <span class="text-info">uncanny valley</span>,
-                and <span class="text-success">nostalgia</span> elements.
-
+                and <span class="text-success">nostalgia</span>.
             </h2>
 
-            <div class="mt-5 text-center mob-socials">
+            <div class="d-block d-lg-none mt-5">
+                <div id="mobile-inject">
+                    <div id="contact-toggle1"
+                            class="inner retrof p-2 ps-3 pe-3 mb-1"
+                            style="font-size:18px; background-color:#dddddd; cursor:pointer;">
+                        Contact Us
+                    </div>
 
-                <a href="https://store.steampowered.com/app/3817240/Heaven_Does_Not_Respond/" target="_blank"
-                   class="text-decoration-none text-dark"
-                   style="display:inline-block;">
-                    <img src="img/steam.png" class="mob-ico" style="display:block; margin:0 auto 5px;">
-                    <span style="display:block; font-size:14px;">Steam</span>
-                </a>
+                    <div id="contact-mail1"
+                            class="inner retrof p-2 ps-3 pe-3 mb-2"
+                            style="display:none; font-size:16px; background-color:#ffffff;">
+                        risestudiosss@gmail.com
+                    </div>
 
-                <a href="https://discord.gg/epZfqy5htB" target="_blank"
-                   class="text-decoration-none text-dark"
-                   style="display:inline-block;">
-                    <img src="img/discord.png" class="mob-ico" style="display:block; margin:0 auto 5px;">
-                    <span style="display:block; font-size:14px;">Discord</span>
-                </a>
-                <a href="https://www.instagram.com/heavendoesnotrespond/" target="_blank"
-                   class="text-decoration-none text-dark"
-                   style="display:inline-block;">
-                    <img src="img/instagram.png" class="mob-ico" style="display:block; margin:0 auto 5px;">
-                    <span style="display:block; font-size:14px;">Instagram</span>
-                </a>
-                <a href="https://www.tiktok.com/@heavendoesnotresp" target="_blank"
-                   class="text-decoration-none text-dark"
-                   style="display:inline-block;">
-                    <img src="img/tiktok.png" class="mob-ico" style="display:block; margin:0 auto 5px;">
-                    <span style="display:block; font-size:14px;">Tiktok</span>
-                </a>
-                <a href="https://www.youtube.com/@heavendoesnotrespond" target="_blank"
-                   class="text-decoration-none text-dark"
-                   style="display:inline-block;">
-                    <img src="img/youtube.png" class="mob-ico" style="display:block; margin:0 auto 5px;">
-                    <span style="display:block; font-size:14px;">Youtube</span>
-                </a>
+                    <div id="credits-toggle1"
+                         class="inner retrof p-2 ps-3 pe-3"
+                         style="font-size:18px; background-color:#dddddd; cursor:pointer;">
+                        Credits
+                    </div>
 
+                    <div id="credits-content1"
+                         class="inner retrof p-3 mt-1"
+                         style="display:none; font-size:14px; background-color:#ffffff; text-align:right; line-height:1.45;">
 
+                        <strong>Audio & Music</strong><br><br>
 
+                        Almost all music and sfx files made by Halil Taylan<br>
+                        https://soundcloud.com/haliltaylan<br><br>
 
+                        Radio Music Loop 012 by nlux<br>
+                        https://freesound.org/s/621675/<br>
+                        License: Attribution 4.0<br><br>
 
+                        Skreechy hard drive by neopolitansixth<br>
+                        https://freesound.org/s/563344/<br>
+                        License: Creative Commons 0<br><br>
 
+                        TensionMusicLoop by Akkaittou<br>
+                        https://freesound.org/s/828570/<br>
+                        License: Attribution 4.0<br><br>
+
+                        Scary Cinematic sound.wav by liezen3<br>
+                        https://freesound.org/s/479920/<br>
+                        License: Attribution 4.0<br><br>
+
+                        erre.aiff by tim.kahn<br>
+                        https://freesound.org/s/83287/<br>
+                        License: Attribution 4.0<br><br>
+
+                        bubbles-01.aif by kijjaz<br>
+                        https://freesound.org/s/16736/<br>
+                        License: Attribution 4.0<br><br>
+
+                        digital_glitch_noise.wav by rlkhafi<br>
+                        https://freesound.org/s/609800/<br>
+                        License: Attribution 3.0<br><br>
+
+                        "Sack_v2" by TheDrone<br><br>
+
+                        <strong>Video</strong><br><br>
+
+                        Video by Pixabay<br>
+                        https://www.pexels.com/video/close-up-view-of-sunflowers-855272/<br><br>
+
+                        <strong>Voice Acting</strong><br><br>
+
+                        Voice acting by Rotem Fenichel<br>
+                        https://www.imdb.com/name/nm9665232/<br><br>
+
+                        <strong>Images</strong><br><br>
+
+                        Cern Particle Accelerator by x70tjw<br>
+                        https://flic.kr/p/qwDFna<br>
+                        License: CC BY-SA 2.0
+                    </div>
+                </div>
             </div>
-
-
         </div>
     </div>
 </div>
 
-
+<!-- ===== ALT NAVBAR ===== -->
 <div id="navbar">
-
-
-    <a href="#home" class="jersey-10-regular float-start">
-        <button class="outer ps-4 pe-4 mt-2 mb-2 ">Rise Studios</button>
-    </a>
-    <a href="#home" class="jersey-10-regular float-end  mt-2 mb-2">
-        <span id="clock" class="inner retrof p-2 ps-3 pe-3" style="font-size: 25px; background-color: #dddddd">
-            20:10
-        </span>
-
+    <a class="float-start jersey-10-regular">
+        <button class="outer ps-4 pe-4 mt-2 mb-2">Rise Studios</button>
     </a>
 
-
+    <a class="float-end jersey-10-regular mt-2 mb-2">
+        <span id="clock" class="inner retrof p-2 ps-3 pe-3"
+              style="font-size:25px; background:#dddddd">00:00</span>
+    </a>
 </div>
+
 <script>
     function updateClock() {
-        const now = new Date();
-        const hours = now.getHours().toString().padStart(2, '0');
-        const minutes = now.getMinutes().toString().padStart(2, '0');
-        document.getElementById('clock').textContent = `${hours}:${minutes}`;
+        const n = new Date();
+        document.getElementById("clock").innerText =
+            n.getHours().toString().padStart(2, '0') + ":" +
+            n.getMinutes().toString().padStart(2, '0');
     }
-
     updateClock();
-
     setInterval(updateClock, 10000);
-
-
     dragElement(document.getElementById("drag-div"));
 
     function dragElement(elmnt) {
@@ -190,17 +330,28 @@
             document.onmousemove = null;
         }
     }
-</script>
-<script src="js/vhs.js"></script>
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    document.getElementById("contact-toggle").onclick = () => {
+        const m = document.getElementById("contact-mail");
+        m.style.display = m.style.display === "none" ? "block" : "none";
+    };
 
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
--->
+    document.getElementById("contact-toggle1").onclick = () => {
+        const m = document.getElementById("contact-mail1");
+        m.style.display = m.style.display === "none" ? "block" : "none";
+    };
+
+    document.getElementById("credits-toggle").onclick = () => {
+        const c = document.getElementById("credits-content");
+        c.style.display = c.style.display === "none" ? "block" : "none";
+    };
+    document.getElementById("credits-toggle1").onclick = () => {
+        const c = document.getElementById("credits-content1");
+        c.style.display = c.style.display === "none" ? "block" : "none";
+    };
+</script>
+
+<script src="js/vhs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
